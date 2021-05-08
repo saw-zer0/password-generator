@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
+</head>
+
+<body id="body" class="dark-mode">
+    <header>
+        <h1>Password Generator</h1>
+        <div>
+            <label for="drakmode-toggle">Dark Mode
+                <input type="checkbox" id="darkmode-toggle" checked>
+            </label>
+        </div>
+    </header>
+
+    <label for="slider">Length
+        <input type="range" id="slider" min="8" max="32" value="20">
+        <input type="number" min="8" max="32" id="password-length-input" value="20">
+    </label>
+
+    <div>
+        <label class="switch" for="lowercase">Lowercase Letters
+            <input type="checkbox" id="lowercase" data-toggle>
+            <span class="slider"></span>
+        </label>
+
+    </div>
+
+    <div>
+        <label class="switch">Uppercase Letters
+            <input type="checkbox" id="uppercase" data-toggle>
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div>
+        <label class="switch">Numbers
+            <input type="checkbox" id="numbers" data-toggle>
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div>
+        <label class="switch">Symbols
+            <input type="checkbox" id="symbols" data-toggle>
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div>
+        <button id="generate" class="generate-btn">Generate</button>
+    </div>
+
+    <div class="password-display">
+        <p id="display-password"></p>
+    </div>
+</body>
+
+</html>
